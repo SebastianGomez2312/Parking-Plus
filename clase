@@ -1,3 +1,4 @@
+/*
 let diassemana= ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes','Sabado','Domingo']
 console.log(diassemana);
 
@@ -5,7 +6,7 @@ let ciudades = ['Popayan','Cali', 'Bogota','Huila'];
 
 ciudades.push('cartagena')
 console.log(ciudades)
-
+/*
 let persona={
   nombres:"Sebastian",
   apellidos:"Gomez",
