@@ -32,34 +32,33 @@
       </div>
 
       <div class="contenedor-formulario">
-        <p style="text-align: center; color: var(--grisOscuro);">Ingreso al sistema</p>
+        <p style="text-align: center; color: var(--grisOscuro)">
+          Ingreso al sistema
+        </p>
         <form>
-          <label style="font-weight: bold;">Usuario</label>
-          <input type="text" id="usuario"/>
+          <label style="font-weight: bold">Usuario</label>
+          <input type="text" id="usuario" />
 
-          <label style="font-weight: bold;">Clave</label>
-          <input type="password" id="clave"/>
+          <label style="font-weight: bold">Clave</label>
+          <input type="password" id="clave" />
 
-          <button on click="ingresaralsistemas()">Ingresar</button>
-
-          
+          <button onclick="ingresarAlSistema()">Ingresar</button>
         </form>
       </div>
-      <p> &copy; Sebastian Gomez - SystemPlus Popayán</p>
+      <p>&copy; Sebastian Gomez - SystemPlus Popayán</p>
     </div>
+
     <script>
-    function ingresaralsistemas() {
-      const inputusuario = document.getElementById('usuario');
-      const inputclave = document.getElementById('clave')
-      
-      if(inputusuario.value =="Alfredo" && inputclave.value == 1002969630) {
-        alert("Puedes ingresar al sistema");
+      function ingresarAlSistema() {
+        const inputUsuario = document.getElementById("usuario");
+        const inputClave = document.getElementById("clave");
+
+        if (inputUsuario.value == "andres" && inputClave.value == 123456) {
+          alert("Puedes ingresar al sistema");
+        } else {
+          alert("No estás autorizado a ingresar");
+        }
       }
-      else{
-        alert("No estas autorizado a ingresar");
-      }
-    }
     </script>
-   
   </body>
 </html>
