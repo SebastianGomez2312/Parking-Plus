@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
   }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
   
   :root {
     --rojoPrincipal: #cb341d;
@@ -11,7 +15,6 @@
     --azul: #456FDC;
     --amarillo: #D7DB07;
   }
-  
   .inter-400 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
