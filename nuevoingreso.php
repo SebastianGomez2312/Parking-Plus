@@ -26,9 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     echo "Error: "  . $insertar . "<br>" . $conexion->error;
   }
-  else {
-    echo "Error: " . $insertar . "<br>" . $conexion->error;
-  }
 
   // Cerrar la conexión
   $conexion->close();

@@ -4,19 +4,17 @@ include 'plantilla.php';
 include 'header.php';
 include 'conexionbasedatos.php';
 
-
-//consultar los vehiculos parqueados
-$vehiculosParqueados = "SELECT * FROM vehiculos WHERE estado ='parqueado'";
+// Consultar los vehiculos parqueados
+$vehiculosParqueados = "SELECT * FROM vehiculos WHERE estado = 'parqueado'";
 $resultado = $conexion->query($vehiculosParqueados);
 
-//obtener los datos como un array multidimencional
+// Obtener los datos como un array multidimensional
 $vehiculos = $resultado->fetch_all(MYSQLI_ASSOC);
 
 ?>
 
-<h3 style="padding-left: 2rem;"> Parqueados</h3>
+<h3 style="padding-left: 2rem;">Vehiculos Parqueados</h3>
 <div class="contenedor-listado-parqueados">
-
 
     <table class="tabla">
         <thead>
@@ -39,11 +37,12 @@ $vehiculos = $resultado->fetch_all(MYSQLI_ASSOC);
                     echo "<i class='fa-solid fa-bullseye'></i>";
                 }
                 echo $vehiculo["placa"] . "</td>";
+
                 echo "<td>" . $vehiculo["fechaHoraIngreso"] . "</td>";
                 echo "</tr>";
             }
         } else {
-            echo "<tr><td colspan='5'> No hay vehiculos parqueados </td> </tr>";
+            echo "<tr><td colspan='5'> No hay vehículos parqueados </td> </tr>";
         }
         ?>
     </table>

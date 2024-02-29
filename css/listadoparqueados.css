@@ -15,8 +15,10 @@
     border: 1px solid var(--grisOscuro);
     padding: 8px;
     text-align: left;
+    border-left: none;
+    border-right: none;
 }
 
 i {
-    padding: 10;
+    padding: 10px;
 }
